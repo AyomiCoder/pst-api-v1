@@ -81,6 +81,7 @@ func GetPost(c *gin.Context) {
 		&post.AuthorID,
 		&post.CreatedAt,
 		&post.UpdatedAt,
+		&post.AuthorUsername,
 	)
 	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Post not found"})
@@ -120,6 +121,7 @@ func GetPosts(c *gin.Context) {
 			&post.AuthorID,
 			&post.CreatedAt,
 			&post.UpdatedAt,
+			&post.AuthorUsername,
 		)
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Error scanning posts"})
