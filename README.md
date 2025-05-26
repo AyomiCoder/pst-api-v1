@@ -134,19 +134,6 @@ type Post struct {
 }
 ```
 
-## Project Structure
-
-```
-.
-├── db/           # Database configuration and initialization
-├── handlers/     # Request handlers
-├── middleware/   # Custom middleware (auth, etc.)
-├── models/       # Data models
-├── routes/       # Route definitions
-├── main.go       # Application entry point
-└── .env          # Environment variables
-```
-
 ## Error Handling
 
 The API uses standard HTTP status codes:
